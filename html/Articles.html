@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>英語星球-小文章</title>
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/Articles.css">
+    <style>
+        ::selection {
+            background: #6363FF;
+            color: #FFF;
+        }
+
+    </style>
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/jquery-ui.min.js"></script>
+    <script>
+        var count=0;
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#title').css('background-color', 'rgba(82, 79, 159, 0.9)');
+                $('#menu').slideToggle().addClass("show");
+            });
+
+            $('#bg').click(function() {
+                $('#title').css('background-color', 'rgba(82, 79, 159, 0.7)');
+            });
+            
+            $('#articles').click(function(){
+               window.location.href="Articles.html";
+            });
+            $('#ques').click(function(){
+               window.location.href="Test.html";
+            });
+            $('#sign_in').click(function(){
+               window.location.href="LearningCheck.html";
+            });
+            
+            $('span#w0').click(function(){
+                if(count==0){
+                    $(this).after('<img id="words" src="../sourcesImage/thanksgiving.jpg" onClick="check();" style="position: absolute; left: 6%; top: 8%;">');
+                    count++;
+                }
+            });
+            $('span#w1').click(function(){
+                if(count==0){
+                    $(this).after('<img id="words" src="../sourcesImage/colonist.jpg" onClick="check();" style="position: absolute; left: 1.6%; top: 11%;">');
+                    count++;
+                }
+            });
+            $('span#w2').click(function(){
+                if(count==0){
+                    $(this).after('<img id="words" src="../sourcesImage/symbolism.jpg" onClick="check();" style="position: absolute; left: 3.55%; top: 13.9%;">');
+                    count++;
+                }
+            });
+            $('span#w3').click(function(){
+                if(count==0){
+                    $(this).after('<img id="words" src="../sourcesImage/incident.jpg" onClick="check();" style="position: absolute; left: 24%; top: 25.5%;">');
+                    count++;
+                }
+            });
+            $('span#w4').click(function(){
+                if(count==0){
+                    $(this).after('<img id="words" src="../sourcesImage/liquor.jpg" onClick="check();" style="position: absolute; left: 34.9%; top: 31.3%;">');
+                    count++;
+                }
+            });
+            $('span#w5').click(function(){
+                if(count==0){
+                    $(this).after('<img id="words" src="../sourcesImage/accustomed.jpg" onClick="check();" style="position: absolute; left: 39%; top: 38.5%;">');
+                    count++;
+                }
+            });
+            $('span#w6').click(function(){
+                if(count==0){
+                    $(this).after('<img id="words" src="../sourcesImage/constitution.jpg" onClick="check();" style="position: absolute; left: -6%; top: 43%;">');
+                    count++;
+                }
+            });
+            $('span#w7').click(function(){
+                if(count==0){
+                    $(this).after('<img id="words" src="../sourcesImage/partisan.jpg" onClick="check();" style="position: absolute; left: -5.9%; top: 47.4%;">');
+                    count++;
+                }
+            });
+        });
+        
+        
+        function check(){
+            $('#words').remove();
+            count=0;
+        }
+
+    </script>
+</head>
+
+<body>
+<!--    <img id="bg" src="../sourcesImage/sky.jpg" alt="">-->
+    <div id="win">
+        
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="../sourcesImage/plane3.png" alt="">
+                </div>
+                <h1 id="h1">英語星球</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="../sourcesImage/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <div id="homepage"><a href="../index.html">首頁</a></div>
+                <div id="lessons"><a href="../html/cart.html">購買課程</a></div>
+                <div id="voc_card"><a href="../html/word.html">我的單字卡</a></div>
+                <div id="sign_in"><a href="../html/LearningCheck.html">學習打卡</a></div>
+                <div id="aim"><a href="../html/Aim.html">學習目標</a></div>
+                <div id="grammar"><a href="../html/grammar.html">簡單文法</a></div>
+                <div id="game"><a href="../html/game.html">闖關遊戲</a></div>
+                <div id="ques"><a href="../html/Test.html">答題</a></div>
+                <div id="vocabulary"><a href="../html/take.html">抽單字</a></div>
+                <div id="articles"><a href="../html/Articles.html">小文章</a></div>
+                <div id="videos"><a href="../html/video.html">小影片</a></div>
+                <div id="pics_to_learn"><a href="../html/funny.html">梗圖學英文</a></div>
+            </div>
+        </div>
+    </div>
+    <div  id="planet"><img src="../sourcesImage/plane14.png" alt=""></div>
+    
+    <div id="articlepage">
+        <h1>Thanksgiving Day</h1>
+        <p>&emsp;<span id="w0">Thanksgiving</span> Day, annual national holiday in the United States and Canada celebrating the harvest and other blessings of the past year. Americans generally believe that their Thanksgiving is modeled on a 1621 harvest feast shared by the English <span id="w1">colonists</span>(Pilgrims) of Plymouth and the Wampanoag people. The American holiday is particularly rich in legend and <span id="w2">symbolism</span>, and the traditional fare of the Thanksgiving meal typically includes turkey, bread stuffing, potatoes, cranberries, and pumpkin pie. With respect to vehicular travel, the holiday is often the busiest of the year, as family members gather with one another.</p>
+        <p>&emsp;Plymouth’s Thanksgiving began with a few colonists going out “fowling,” possibly for turkeys but more probably for the easier prey of geese and ducks, since they “in one day killed as much as…served the company almost a week.” Next, 90 or so Wampanoag made a surprise appearance at the settlement’s gate, doubtlessly unnerving the 50 or so colonists. Nevertheless, over the next few days the two groups socialized without <span id="w3">incident</span> . The Wampanoag contributed venison to the feast, which included the fowl and probably fish, eels, shellfish, stews, vegetables, and beer. Since Plymouth had few buildings and manufactured goods, most people ate outside while sitting on the ground or on barrels with plates on their laps. The men fired guns, ran races, and drank <span id="w4">liquor</span>, struggling to speak in broken English and Wampanoag. This was a rather disorderly affair, but it sealed a treaty between the two groups that lasted until King Philip’s War (1675–76), in which hundreds of colonists and thousands of Native Americans lost their lives.</p>
+        <p>&emsp;The New England colonists were <span id="w5">accustomed</span> to regularly celebrating “Thanksgivings,” days of prayer thanking God for blessings such as military victory or the end of a drought. The U.S. Continental Congress proclaimed a national Thanksgiving upon the enactment of the <span id="w6">Constitution</span>, for example. Yet, after 1798, the new U.S. Congress left Thanksgiving declarations to the states; some objected to the national government’s involvement in a religious observance, Southerners were slow to adopt a New England custom, and others took offense over the day’s being used to hold <span id="w7">partisan</span> speeches and parades. A national Thanksgiving Day seemed more like a lightning rod for controversy than a unifying force.</p>
+        <p>&emsp;Thanksgiving Day did not become an official holiday until Northerners dominated the federal government. While sectional tensions prevailed in the mid-19th century, the editor of the popular magazine Godey’s Lady’s Book, Sarah Josepha Hale, campaigned for a national Thanksgiving Day to promote unity. She finally won the support of President Abraham Lincoln. On October 3, 1863, during the Civil War, Lincoln proclaimed a national day of thanksgiving to be celebrated on Thursday, November 26.</p>
+        <p>&emsp;The holiday was annually proclaimed by every president thereafter, and the date chosen, with few exceptions, was the last Thursday in November. President Franklin D. Roosevelt, however, attempted to extend the Christmas shopping season, which generally begins with the Thanksgiving holiday, and to boost the economy by moving the date back a week, to the third week in November. But not all states complied, and, after a joint resolution of Congress in 1941, Roosevelt issued a proclamation in 1942 designating the fourth Thursday in November (which is not always the last Thursday) as Thanksgiving Day.</p>
+        <p>&emsp;As the country became more urban and family members began to live farther apart, Thanksgiving became a time to gather together. The holiday moved away from its religious roots to allow immigrants of every background to participate in a common tradition. Thanksgiving Day football games, beginning with Yale versus Princeton in 1876, enabled fans to add some rowdiness to the holiday. In the late 1800s parades of costumed revelers became common. In 1920 Gimbel’s department store in Philadelphia staged a parade of about 50 people with Santa Claus at the rear of the procession. Since 1924 the annual Macy’s parade in New York City has continued the tradition, with huge balloons since 1927. The holiday associated with Pilgrims and Native Americans has come to symbolize intercultural peace, America’s opportunity for newcomers, and the sanctity of home and family.</p>
+        <p>&emsp;Days of thanksgiving in Canada also originated in the colonial period, arising from the same European traditions, in gratitude for safe journeys, peace, and bountiful harvests. The earliest celebration was held in 1578, when an expedition led by Martin Frobisher held a ceremony in present-day Nunavut to give thanks for the safety of its fleet. In 1879 Parliament established a national Thanksgiving Day on November 6; the date has varied over the years. Since 1957 Thanksgiving Day has been celebrated in Canada on the second Monday in October.</p>
+    </div>
+</body>
+
+</html>

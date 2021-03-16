@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>英語星球-首頁</title>
+    <link rel="stylesheet" href="css/HomePage.css">
+    <link rel="stylesheet" href="css/HomePageCss.css">
+    <style>
+        ::selection {
+            background: #6363FF;
+            color: #FFF;
+        }
+
+    </style>
+    <script src="_js/jquery.min.js"></script>
+    <script src="_js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#title').css('background-color', 'rgba(82, 79, 159, 0.9)');
+                $('#menu').slideToggle().addClass("show");
+            });
+
+            $('#bg').click(function() {
+                $('#title').css('background-color', 'rgba(82, 79, 159, 0.7)');
+            });
+            
+            $('#voc_card').click(function(){
+                $(window).attr('location','word.html');
+            });
+            $('#card').click(function(){
+                $(window).attr('location','word.html');
+            });
+            
+            $('#aim').click(function(){
+                $(window).attr('location','Aim.html');
+            });
+            $('#H_aim').click(function(){
+                $(window).attr('location','Aim.html');
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="win">
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="sourcesImage/plane3.png" alt="">
+                </div>
+                <h1 id="h1">英語星球</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="sourcesImage/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <div id="homepage"><a href="html/HomePage.html">首頁</a></div>
+                <div id="lessons"><a href="html/cart.html">購買課程</a></div>
+                <div id="voc_card"><a href="html/word.html">我的單字卡</a></div>
+                <div id="sign_in"><a href="html/LearningCheck.html">學習打卡</a></div>
+                <div id="aim"><a href="html/Aim.html">學習目標</a></div>
+                <div id="grammar"><a href="html/grammar.html">簡單文法</a></div>
+                <div id="game"><a href="html/game.html">闖關遊戲</a></div>
+                <div id="ques"><a href="html/Test.html">答題</a></div>
+                <div id="vocabulary"><a href="html/take.html">抽單字</a></div>
+                <div id="articles"><a href="html/Articles.html">小文章</a></div>
+                <div id="videos"><a href="html/video.html">小影片</a></div>
+                <div id="pics_to_learn"><a href="html/funny.html">梗圖學英文</a></div>
+            </div>
+        </div>
+
+        <div id="card">
+            <a href="html/word.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn1.png" alt=""></a>
+        </div>
+
+        <div id="ved">
+            <a href="html/video.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn2.png" alt=""></a>
+        </div>
+
+        <div id="H_aim">
+            <a href="html/Aim.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn3.png" alt=""></a>
+        </div>
+
+        <div id="gra">
+            <a href="html/grammar.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn4.png" alt=""></a>
+        </div>
+
+        <div id="voc">
+            <a href="html/take.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn6.png" alt=""></a>
+        </div>
+
+        <div id="H_ques">
+            <a href="html/Test.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn7.png" alt=""></a>
+        </div>
+
+        <div id="sign">
+            <a href="html/LearningCheck.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn5.png" alt=""></a>
+        </div>
+
+        <div id="H_game">
+            <a href="html/game.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn8.png" alt=""></a>
+        </div>
+
+        <div id="art">
+            <a href="html/Articles.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn10.png" alt=""></a>
+        </div>
+
+        <div id="les">
+            <a href="html/cart.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn9.png" alt=""></a>
+        </div>
+        
+        <div id="pic">
+            <a href="html/funny.html"><img style="width: 100%; height: 100%; border-radius: 50%;"  src="sourcesImage/btn11.png" alt=""></a>
+        </div>
+
+        <div id="plane19">
+            <img style="width: 100%; height: 100%;" src="sourcesImage/plane19.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

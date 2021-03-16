@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>英語星球-我的單字卡</title>
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/word.css">
+    <style>
+        ::selection {
+            background: #6363FF;
+            color: #FFF;
+        }
+
+    </style>
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#title').css('background-color', 'rgba(82, 79, 159, 0.9)');
+                $('#menu').slideToggle().addClass("show");
+            });
+
+            $('#homepage').click(function() {
+                $(window).attr('location', 'HomePage_ver2.html');
+            });
+
+            $('#voc_card').click(function() {
+                $(window).attr('location', 'word.html');
+            });
+
+            $('#aim').click(function() {
+                $(window).attr('location', 'Aim.html');
+            });
+
+            $('#bg').click(function() {
+                $('#title').css('background-color', 'rgba(82, 79, 159, 0.7)');
+            });
+
+            $('#apple').click(function() {
+                $('#answer1').slideToggle().addClass("show");
+            });
+
+            $('#banana').click(function() {
+                $('#answer2').slideToggle().addClass("show");
+            });
+
+            $('#happy').click(function() {
+                $('#answer3').slideToggle().addClass("show");
+            });
+
+            $('#sad').click(function() {
+                $('#answer4').slideToggle().addClass("show");
+            });
+
+            $('#newVocButton').click(function() {
+                var $voc_item = $('<div id="new_voc"><p id="newpredict"></p><p id="newanswer5"></p></div>');
+
+                var predict = $('#predict').text();
+                var answer5 = $('#answer5').text();
+
+                var item_obj = {
+                    predict: predict,
+                    answer5: answer5
+                }
+                $voc_item.find('#newpredict').text(item_obj.predict);
+                $voc_item.find('#newanswer5').text(item_obj.answer5);
+                $('#voc_win').append($voc_item);
+            });
+
+            $('body').on('click', '#newpredict', function() {
+                $('#newanswer5').slideToggle().addClass("show");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="win">
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="../sourcesImage/plane3.png" alt="">
+                </div>
+                <h1 id="h1">英語星球</h1>
+            </div>
+
+            <div id="pic_menu">
+                <img id="threeLine" src="../sourcesImage/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <div id="homepage"><a href="../index.html">首頁</a></div>
+                <div id="lessons"><a href="../html/cart.html">購買課程</a></div>
+                <div id="voc_card"><a href="../html/word.html">我的單字卡</a></div>
+                <div id="sign_in"><a href="../html/LearningCheck.html">學習打卡</a></div>
+                <div id="aim"><a href="../html/Aim.html">學習目標</a></div>
+                <div id="grammar"><a href="../html/grammar.html">簡單文法</a></div>
+                <div id="game"><a href="../html/game.html">闖關遊戲</a></div>
+                <div id="ques"><a href="../html/Test.html">答題</a></div>
+                <div id="vocabulary"><a href="../html/take.html">抽單字</a></div>
+                <div id="articles"><a href="../html/Articles.html">小文章</a></div>
+                <div id="videos"><a href="../html/video.html">小影片</a></div>
+                <div id="pics_to_learn"><a href="../html/funny.html">梗圖學英文</a></div>
+            </div>
+
+            <p id="newVocButton" style="position: relative; background-color: white; color: black; width: 170px; height: 35px; border-radius: 15px; cursor: pointer; margin: 0px auto; top: 75px; text-align: center; font-family: 'cwTeXYen'; font-size: 40px;">新增單字</p>
+
+            <div id="voc_win" style="position: relative; width: 100%; height: 650px; margin: 35px auto; top: 60px; overflow: auto;">
+                <div style="position: relative; float: left; width: 425px; height: 225px; margin: 40px; border-radius: 25px; background-color: rgba(255, 255, 255, 0.5)">
+                    <p id="apple">Apple</p>
+                    <p id="answer1">N. 蘋果</p>
+                </div>
+
+                <div style="position: relative; float: left; width: 425px; height: 225px; margin: 40px; border-radius: 25px; background-color: rgba(255, 255, 255, 0.5)">
+                    <p id="banana">Banana</p>
+                    <p id="answer2">N. 香蕉</p>
+                </div>
+                <div style="position: relative; float: left; width: 425px; height: 225px; margin: 40px; border-radius: 25px; background-color: rgba(255, 255, 255, 0.5)">
+                    <p id="sad">Sad</p>
+                    <p id="answer4">Adj. 難過的</p>
+                </div>
+                <div style="position: relative; float: left; width: 425px; height: 225px; margin: 40px; border-radius: 25px; background-color: rgba(255, 255, 255, 0.5)">
+                    <p id="happy">Happy</p>
+                    <p id="answer3">Adj. 高興的</p>
+                </div>
+            </div>
+        </div>
+        <img style="position: fixed; width: 225px; height: 136px; right: 200px; bottom: 50px;" src="../sourcesImage/plane17.png" alt="">
+
+
+        <div>
+            <p id="predict">Predict</p>
+            <p id="answer5">V. 預測</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>英語星球-簡單文法</title>
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <style>
+        ::selection {
+            background: #6363FF;
+            color: #FFF;
+        }
+
+        #white_back {
+            background-color: rgba(179, 217, 243, 0.6);
+            margin: 10%;
+            border-radius: 50px;
+            text-align: center;
+            font-family: 'cwTeXYen', sans-serif;
+        }
+        #plane_corner{
+            position: absolute;
+            left: 10px;
+            bottom: -60px;
+        }
+
+    </style>
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#title').css('background-color', 'rgba(82, 79, 159, 0.9)');
+                $('#menu').slideToggle().addClass("show");
+            });
+
+            $('#bg').click(function() {
+                $('#title').css('background-color', 'rgba(82, 79, 159, 0.7)');
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="win">
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="../sourcesImage/plane3.png" alt="">
+                </div>
+                <h1 id="h1">英語星球</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="../sourcesImage/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <div id="homepage"><a href="../index.html">首頁</a></div>
+                <div id="lessons"><a href="../html/cart.html">購買課程</a></div>
+                <div id="voc_card"><a href="../html/word.html">我的單字卡</a></div>
+                <div id="sign_in"><a href="../html/LearningCheck.html">學習打卡</a></div>
+                <div id="aim"><a href="../html/Aim.html">學習目標</a></div>
+                <div id="grammar"><a href="../html/grammar.html">簡單文法</a></div>
+                <div id="game"><a href="../html/game.html">闖關遊戲</a></div>
+                <div id="ques"><a href="../html/Test.html">答題</a></div>
+                <div id="vocabulary"><a href="../html/take.html">抽單字</a></div>
+                <div id="articles"><a href="../html/Articles.html">小文章</a></div>
+                <div id="videos"><a href="../html/video.html">小影片</a></div>
+                <div id="pics_to_learn"><a href="../html/funny.html">梗圖學英文</a></div>
+            </div>
+        </div>
+        
+        <div id="white_back">
+            <br>
+            <h3>had been 過去完成式/過去完成進行式</h3>
+            <br>
+            <p>過去完成式：表達的是過去某一時間點或某一動作之前已經完成的動作</p>
+            <br>
+            <p>過去完成進行式：指的是過去某事件之前，更早發生的事情且持續進行中</p>
+            <br>
+            <p>had been的用法跟have/has been是一樣的，</p>
+            <p>只是一個時間點在過去，一個時間點在現在</p>
+            <br>
+            <p>Ex：I had been thinking about traveling, but that ended when my girlfriend got sick.</p>
+            <p>我過去一直想著去旅行，但我女友生病後我打消了這個念頭。(過去完成進行式)</p>
+            <br>
+            <p>Ex：The plane had already taken off when she arrived at the airport.</p>
+            <p>當她到達機場時，這架飛機已經起飛了。(過去完成式)</p>
+            <br>
+            <div><img id="plane_corner" src="../sourcesImage/plane23.png"></div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

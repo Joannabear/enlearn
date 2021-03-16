@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+#calendar table {
+  border-collapse: collapse;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 60px;
+}
+#calendar td{
+  border: 1px solid #232323;
+  border-left: none;
+  border-bottom: none;
+}
+  #calendar {
+    float: left;
+    width: 35%;
+    min-height: 3vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+      
+      position: absolute;
+      top: 12%;
+      left: 13%
+  }
+  #calendar #app-name-portrait {
+    display: none;
+  }
+  #calendar #theme-portrait {
+    display: none;
+  }
+  #calendar thead tr:first-child th div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #calendar h3 {
+    margin: 0;
+    padding: 0 2%;
+    font-size: 2vw;
+    font-weight: 700;
+    display: inline-block;
+  }
+  #calendar .weekday {
+    font-size: 1.7vw;
+    font-weight: 300;
+    padding: 3% 0 2%;
+    color: black;
+    border-top: 1px solid black;
+  }
+#cal-month{
+    color: black;
+}
+#cal-year{
+    color: black;
+}
+#calendar tbody td {
+  height: 4.5vw;
+  width: 25vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  vertical-align: top;
+  padding: 0.5vw;
+  transition: font-size .6s ease;
+}
+#calendar tbody td:hover {
+  font-size:  2.5vw;
+}
+#calendar .btn {
+  color: black;
+}
+
+#calendar .btn :hover {
+  opacity: 0.5;
+}
+#calendar #current-day {
+    background-color: rgba(105,105,105,0.3);
+}
+
+table tr th{
+    font-size: 25px;
+}
+
+#calendar .color{
+    color: rgba(0,0,0,.2);
+}
+
+.dayborder{
+    background-color: rgba(125,125,125,0.49);
+}
